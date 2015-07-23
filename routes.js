@@ -8,5 +8,11 @@
 
 Router.route('/', {
 	controller: 'homeController',
-	action: 'action'
+	action: 'cats'
+});
+
+
+Router.route('/bootstrap', {
+	controller: 'homeController',
+	action: 'bootstrap'
 });

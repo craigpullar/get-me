@@ -1,0 +1,9 @@
+/* CSS declarations go here */
+body {
+	background-color: #f5f5f5;
+}
+
+.col-centered{
+	float: none;
+	margin: 0 auto;
+}

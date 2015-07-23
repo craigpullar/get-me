@@ -1,6 +1,7 @@
 <!-- These templates are confusing lol -->
 <head>
 	<title>Get me app</title>
+	<link rel="stylesheet" href="app/get-me.css">
 </head>
 
 
@@ -8,10 +9,22 @@
 
 	<body>
 
+		<div class="row">
+			<div class="col-lg-6 col-centered">
+				<h1>Get me app</h1>
 
-		<h1>Home</h1>
+				{{> loginButtons}}
 
-		<p> Data Title: {{title}} </p>
+
+				{{#if currentUser}}
+				<p>You're logged in.</p>
+				{{else}}
+				<p>You're not logged in.</p>
+				{{/if}}
+
+				<div class="btn btn-primary">Hello</div>
+			</div>
+		</div>
 
 	</body>
 

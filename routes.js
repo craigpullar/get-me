@@ -8,6 +8,5 @@
 
 Router.route('/', {
 	controller: 'homeController',
-	action: 'show'
+	action: 'action'
 });
-

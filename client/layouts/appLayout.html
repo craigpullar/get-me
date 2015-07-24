@@ -1,0 +1,24 @@
+<template name="AppLayout">
+	<body>
+
+		<header>
+			{{> yield "header"}}
+		</header>
+
+		<div class="row">
+			<div class="col-lg-6 col-centered">
+				<h1>Get me app</h1>
+			</div>
+		</div>
+
+		{{> yield "content"}}
+
+
+		<footer>
+			{{> yield "footer"}}
+		</footer>
+
+	</body>
+
+</template>
+

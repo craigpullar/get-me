@@ -16,3 +16,8 @@ Router.route('/bootstrap', {
 	controller: 'miscellaneousController',
 	action: 'bootstrap'
 });
+
+Router.route('/card-template', {
+	controller: 'developmentController',
+	action: 'card'
+});

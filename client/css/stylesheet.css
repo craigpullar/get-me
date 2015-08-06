@@ -45,3 +45,82 @@ body {
 	float: none;
 	margin: 0 auto;
 }
+
+#menu-bar {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #5085B6;
+	height: 55px;
+	z-index: 9999999;
+}
+
+#menu-icon {
+	position: absolute;
+	left: 10px;
+	top: 8px;
+	width: 37px;
+	height: 37px;
+	background: url(img/menu-icons/menu-icon.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+
+
+#side-menu {
+	background-color: #5085B6;
+	position: fixed;
+	top: 55px;
+	width: 70%;
+	max-width: 400px;
+	height: 100%;
+	box-shadow: 5px 0px 9px -5px rgba(0,0,0,0.5);
+	z-index: 999999;
+}
+
+#side-menu ul {
+	list-style: none;
+	margin: 40px 0 0 0;
+	padding: 0 30px;
+}
+
+#side-menu li {
+	color: #fff;
+	text-transform: uppercase;
+	padding: 9px 0px;
+}
+
+
+#side-menu #welcome {
+	color: #fff;
+	text-align: center;
+}
+#side-menu #welcome p {
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+
+#side-menu #profile-image {
+	width: 100px;
+	height: 100px;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	-webkit-box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+	box-shadow: 0 5px 8px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+#content {
+	margin-top: 55px;
+}

@@ -1,24 +1,26 @@
 <template name="AppLayout">
-	<body>
+	<!-- <head> {{> yield "head"}} </head> -->
+	
 
-		<header>
-			{{> yield "header"}}
-		</header>
 
-		<div class="row">
-			<div class="col-lg-6 col-centered">
-				<h1>Get me app</h1>
-			</div>
-		</div>
 
+	<header>
+		{{> yield "header"}}
+	</header>
+
+	{{> yield "side-menu" }}
+
+	<div id="content">
 		{{> yield "content"}}
+	</div>
+	
 
 
-		<footer>
-			{{> yield "footer"}}
-		</footer>
+	<footer>
+		{{> yield "footer"}}
+	</footer>
 
-	</body>
+
 
 </template>
 

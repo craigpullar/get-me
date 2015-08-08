@@ -8,14 +8,38 @@ if (Meteor.isClient) {
 	var menu_open = false;
 
 	Template.header.events({
-		'click div#menu-icon' : function(event){
-			console.log('menu icon clicked');
+		'click div#menu-icon, click #overlay' : function(event){
+			toggleMenu();
+		}
+	});
+
+	Template.AppLayout.helpers({
+		templateGestures: {
+			'swiperight #swipe': function(e, t) {
+				e.preventDefault();
+				toggleMenu();
+			}
+		}
+
+	});
+
+
+
+	function toggleMenu(){
+
+		console.log('menu icon clicked');
+		$('#overlay').toggleClass('show');
+
 			// $('#side-menu').fadeToggle();
 			if (!menu_open) {
 
 				$('#side-menu').velocity("transition.slideLeftIn", {
+					duration: 400,
 					begin: function(){
-						$('#side-menu #welcome').delay('100').velocity("transition.slideUpIn");
+						$('#side-menu #welcome, #side-menu ul').delay('100').velocity("transition.slideUpIn", {
+							visibility: "visible"
+						});
+
 						$('#side-menu ul li').delay('100').velocity("transition.slideLeftIn", { stagger: 100 });
 						menu_open = true;
 					}
@@ -28,25 +52,15 @@ if (Meteor.isClient) {
 					display: "none",
 					complete: function(){
 						menu_open = false;
-						$('#welcome').hide();
+						$('#side-menu #welcome, #side-menu ul').delay('100').velocity({opacity: 0}, {
+							visibility: "hidden"
+						});
+						// $('#welcome').c();
 					}
 				});
 
 			} // end else
 
+		}
 
-
-
-
-			// $('#side-menu').velocity("transition.slideLeftIn", {
-			// 	complete: function(){
-			// 		$('#side-menu ul li').velocity("transition.slideLeftIn", { stagger: 100 });
-			// 	}
-			// });
-
-
-}
-});
-
-
-}
+	}

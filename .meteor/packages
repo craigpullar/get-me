@@ -15,3 +15,5 @@ less
 dburles:google-maps
 velocityjs:velocityjs
 jquery
+fastclick
+chriswessels:hammer

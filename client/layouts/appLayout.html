@@ -1,8 +1,9 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+
 <template name="AppLayout">
-	<!-- <head> {{> yield "head"}} </head> -->
-	
-
-
 
 	<header>
 		{{> yield "header"}}
@@ -10,10 +11,19 @@
 
 	{{> yield "sideMenu" }}
 
+
 	<div id="content">
+
+		{{#HammerTouchArea gestureMap=templateGestures}}
+		<div id="swipe"></div>
+		{{/HammerTouchArea}}
+		
 		{{> yield "content"}}
 	</div>
 	
+
+
+
 
 
 	<footer>

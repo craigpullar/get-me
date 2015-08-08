@@ -17,9 +17,9 @@ Router.route('/bootstrap', {
 	action: 'bootstrap'
 });
 
-Router.route('/card-template', {
+Router.route('tag', {
 	controller: 'developmentController',
-	action: 'card'
+	action: 'tag'
 });
 
 Router.route ('/footer', {

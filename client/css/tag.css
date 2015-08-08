@@ -1,0 +1,12 @@
+	.tag p:before{
+		content:'# ';
+	}
+	.tag {
+		display:inline-block;
+		border-radius:10px;
+		width:auto;
+	}
+	.tag p {
+		padding:2px;
+		margin:0px;
+	}

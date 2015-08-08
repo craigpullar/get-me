@@ -26,3 +26,27 @@ Router.route ('/footer', {
 	controller: 'developmentController',
 	action: 'footer'
 });
+Router.route ('/search', {
+	controller: 'searchController',
+	action: 'show'
+});
+Router.route ('/browse', {
+	controller: 'browseController',
+	action: 'show'
+});
+Router.route ('/hot', {
+	controller: 'hotController',
+	action: 'show'
+});
+Router.route ('/map', {
+	controller: 'mapController',
+	action: 'show'
+});
+Router.route ('/outlet', {
+	controller: 'outletController',
+	action: 'show'
+});
+Router.route ('/preferences', {
+	controller: 'preferencesController',
+	action: 'show'
+});

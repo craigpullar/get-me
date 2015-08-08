@@ -1,0 +1,11 @@
+.weather-content h2 {
+	font-size: 0.8em;
+	margin: 3px 10px 0px 0px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+}
+.weather-content h1 {
+	font-weight: normal;
+	font-size: 1.6em;
+	margin: 0px 15px 10px 0px;
+}

@@ -16,7 +16,11 @@ if (Meteor.isClient) {
   	card : function() {
   		this.render('card', {to: 'content'});
   		this.render('card-style', {to: 'style'});
-  	}
+  	},
+    footer : function() {
+      this.render('footer', {to:'content'});
+      this.render('footer-style', {to: 'style'});
+    }
   });
 
 }

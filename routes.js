@@ -21,3 +21,8 @@ Router.route('/card-template', {
 	controller: 'developmentController',
 	action: 'card'
 });
+
+Router.route ('/footer', {
+	controller: 'developmentController',
+	action: 'footer'
+});

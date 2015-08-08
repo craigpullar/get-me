@@ -31,9 +31,37 @@
 	font-family: 'Quicksand Light Bold';
 	src: url(font/Quicksand_Bold_Oblique.otf);
 }
+
 /*--------------*/
 /* END OF FONTS */
 /*--------------*/
+
+
+/*----------------*/
+/* HELPER CLASSES */
+/*----------------*/
+.quicksand-book {
+	font-family:'Quicksand Book';
+}
+.quicksand-bold {
+	font-family:'Quicksand Bold';
+}
+.quicksand-light {
+	font-family:'Quicksand Light';
+}
+.bg-blue {
+	background-color:#5085B6;
+}
+.color-white {
+	color:#fff;
+}
+.text-right {
+	text-align:right;
+}
+
+/*-----------------------*/
+/* END OF HELPER CLASSES */
+/*-----------------------*/
 
 body {
 	background-color: #f5f5f5;

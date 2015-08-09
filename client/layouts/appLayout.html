@@ -8,8 +8,9 @@
 	<header>
 		{{> yield "header"}}
 	</header>
-
+	{{#HammerTouchArea gestureMap=templateGestures}}
 	{{> yield "sideMenu" }}
+	{{/HammerTouchArea}}
 
 
 	<div id="content">

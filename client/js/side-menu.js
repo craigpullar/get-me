@@ -13,15 +13,31 @@ if (Meteor.isClient) {
 		}
 	});
 
+
+
 	Template.AppLayout.helpers({
 		templateGestures: {
 			'swiperight #swipe': function(e, t) {
 				e.preventDefault();
 				toggleMenu();
+			},
+			'swipeleft #side-menu': function(e, t) {
+				e.preventDefault();
+				toggleMenu();
 			}
+
+			// 'pan #swipe': function(e, t){
+			// 	e.preventDefault();
+			// 	var Xpos = e.deltaX;
+			// 	$('#swipe').css("left", Xpos);
+			// 	console.log( e.deltaX);
+			// 	// console.log( 'draggin');
+			// }
 		}
 
 	});
+
+	
 
 
 

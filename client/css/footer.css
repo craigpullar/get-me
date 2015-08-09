@@ -16,3 +16,7 @@ footer {
 	font-size: 1.6em;
 	margin: 0px 15px 10px 0px;
 }
+.weather-content i {
+	color:#fff!important;
+	font-size:1.6em!important;
+}

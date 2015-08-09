@@ -53,7 +53,7 @@
 	background-color:#5085B6;
 }
 .color-white {
-	color:#fff;
+	color:#fff!important;
 }
 .text-right {
 	text-align:right;

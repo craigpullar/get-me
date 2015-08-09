@@ -2,6 +2,7 @@ if (Meteor.isClient) {
 
 	browseController = baseController.extend({
 		show: function() {
+			page_title = 'Browse';
 			this.render('browse', {to: 'content'});
 			this.render('head', {to: 'head'});
 			this.render('sideMenu', {to: 'sideMenu'});

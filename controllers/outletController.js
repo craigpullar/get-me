@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 
 	outletController = baseController.extend({
 		show: function() {
-			page_title = 'outlet';
+			Session.set('page_title','outlet');
 			this.render('outlet', {to: 'content'});
 			this.render('head', {to: 'head'});
 			this.render('sideMenu', {to: 'sideMenu'});

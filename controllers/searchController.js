@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 
 	searchController = baseController.extend({
 		show: function() {
-			page_title = 'Search';
+			Session.set('page_title','search');
 			this.render('search', {to: 'content'});
 			this.render('head', {to: 'head'});
 			this.render('sideMenu', {to: 'sideMenu'});

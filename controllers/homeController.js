@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 
 	homeController = baseController.extend({
 		show: function() {
-			page_title = 'Home';
+			Session.set('page_title','home');
 			this.render('card', {to: 'content'});
 			this.render('head', {to: 'head'});
 			this.render('sideMenu', {to: 'sideMenu'});

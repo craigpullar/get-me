@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 
 	hotController = baseController.extend({
 		show: function() {
-			page_title = 'Whats Hot';
+			Session.set('page_title','Whats hot');
 			this.render('hot', {to: 'content'});
 			this.render('head', {to: 'head'});
 			this.render('sideMenu', {to: 'sideMenu'});

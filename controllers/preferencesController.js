@@ -2,7 +2,7 @@ if (Meteor.isClient) {
 
 	preferencesController = baseController.extend({
 		show: function() {
-			page_title = 'preferences';
+			Session.set('page_title','preferences');
 			this.render('preferences', {to: 'content'});
 			this.render('head', {to: 'head'});
 			this.render('sideMenu', {to: 'sideMenu'});

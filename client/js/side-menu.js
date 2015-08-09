@@ -8,7 +8,14 @@ if (Meteor.isClient) {
 	var menu_open = false;
 
 	Template.header.events({
-		'click div#menu-icon, click #overlay' : function(event){
+		'click div#menu-icon, #overlay' : function(event){
+			toggleMenu();
+		}
+	});
+
+
+	Template.sideMenu.events({
+		'click div#overlay, click #side-menu a' : function(event){
 			toggleMenu();
 		}
 	});
@@ -37,7 +44,6 @@ if (Meteor.isClient) {
 
 	});
 
-	
 
 
 

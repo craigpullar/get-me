@@ -1,4 +1,5 @@
 <template name="card">
+	{{#HammerTouchArea gestureMap=templateGestures}}
 	<div class="card">
 		<img id="back" src="images.jpg" />
 		<div class="gradient">
@@ -11,4 +12,5 @@
 			<img class="rating" src="img/card/star.png" />
 		</div>
 	</div>
+	{{/HammerTouchArea}}
 </template>

@@ -4,11 +4,11 @@ if (Meteor.isClient){
 		templateGestures: {
 			'swiperight .card': function(e,t) {
 				e.preventDefault();
-				$(e.target).parent().css('-webkit-transform', 'translate(100px,0)');
+				$(e.target).parent('.card').addClass('swipe-right');
 			},
 			'swipeleft .card': function(e, t) {
 				e.preventDefault();
-				$(e.target).parent().css('-webkit-transform', 'translate(-100px,0)');
+				$(e.target).parent('.card').addClass('swipe-left');
 
 			}
 		}
